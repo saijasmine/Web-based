@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 1.5rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+h2 {
+    color: #1e3c72;
+    border-bottom: 2px solid #2a5298;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #1e3c72;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+#about, #education, #projects, #activities, #contact {
+    background-color: #fff;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 3rem; /* Add left margin to leave space on the left side */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#education ul, #activities ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Project Styles */
+#projects .project {
+    background-color: #f8f9fa;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#projects .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Activity List Styles */
+#activities li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    position: relative;
+}
+
+#activities li:before {
+    content: "★";
+    color: #2a5298;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+}
+
+/* Contact Info Styles */
+#contact p {
+    font-size: 1.2rem;
+}
+
+#contact a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #1e3c72;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1e3c72;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 95%;
+        padding: 1rem 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #about, #education, #projects, #activities, #contact {
+        margin-left: 1rem; /* Reduce left margin for smaller screens */
+    }
+
+    #projects .project, #contact p {
+        font-size: 1rem;
+    }
+
+    #activities li {
+        padding-left: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    #about, #education, #projects, #activities, #contact {
+        margin-left: 0.5rem; /* Further reduce left margin for very small screens */
+    }
+
+    #projects .project, #contact p {
+        font-size: 0.9rem;
+    }
+
+    #activities li {
+        padding-left: 0.6rem;
+    }
+}
